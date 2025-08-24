@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buzz Mitra Form</title>
+  <style>
+    /* .form-container{
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1733824683/buzz_mitra_form_bg_q4dlzq.png") no-repeat center center/cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }  */
+      .form-container {
+  margin: 0;
+  padding: 0;
+  min-height: auto;
+  background: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1733824683/buzz_mitra_form_bg_q4dlzq.png") 
+              no-repeat center center/cover;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+  padding: 40px 0;
+}
+
+    .overlay {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1755675342/The_Deadly_Outcomes_of_an_Acqui-hire_v3veuq.jpg");
+     background-size: cover;
+      padding: 30px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+    .form-container {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* 👈 replace height with min-height */
+  height: auto;       /* 👈 allow expand if content is bigger */
+  background: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1733824683/buzz_mitra_form_bg_q4dlzq.png") 
+              no-repeat center center/cover;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 👈 keep form starting from top */
+  padding: 40px 0; /* 👈 give breathing space */
+}
+.overlay {
+  background: rgba(0,0,0,0.6); /* better readability */
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+    .overlay h2 {
+      margin-top: 0;
+      color: #333;
+      color: aliceblue;
+      text-align: center;
+      font-size: 22px;
+    }
+    .form-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    .form-row input,
+    .form-row select {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.85);
+      font-size: 14px;
+      min-width: 0;
+    }
+    .field-error {
+      display: none;
+      color: red;
+      font-size: 12px;
+      margin-top: -8px;
+      padding-top: 7px;
+      margin-bottom: 5px;
+      flex-basis: 100%; /* error msg full row occupy cheyyadam */
+    }
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      font-size: 14px;
+      color: #444;
+    }
+    .checkbox-row input { margin-right: 8px; }
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background: #ff6600;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .btn:hover { background: #e65c00; }
+    .message { margin-top: 15px; text-align: center; font-size: 14px; display: none; }
+    .success { color: green; }
+
+/* cards */
+ section {
+      position: relative;
+      height: 100vh; /* Full screen section */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-size: cover;
+      background-attachment: fixed; /* 👈 Parallax effect */
+      background-position: center;
+    }
+
+    .content-box {
+      background: rgba(0,0,0,0.6); /* Transparent black overlay */
+      /* padding: 30px 50px; */
+      border-radius: 15px;
+      max-width: 500px;
+      padding:30px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    /* Section Backgrounds */
+    #section1 {
+      background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1755768730/WhatsApp_Image_2025-08-20_at_3.17.00_PM_gj8sms.jpg");
+    }
+
+    #section2 {
+      background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1755768725/WhatsApp_Image_2025-08-20_at_3.17.00_PM_1_ygk8kf.jpg");
+    }
+
+    #section3 {
+      background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1755768724/WhatsApp_Image_2025-08-20_at_3.17.10_PM_zdusgq.jpg");
+    }
+    section {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #000; /* gaps vaste black bg */
+}
+
+  </style>
+</head>
+<body>
+
+
+<div>
+  <section id="section1">
+    <!-- <div class="content-box">
+      <h2>Buzz Groups</h2>
+      <p>Grow your wealth with high-return real estate investments.</p>
+    </div> -->
+  </section>
+
+  <section id="section2">
+    <!-- <div class="content-box">
+      <h2>Buzz Groups</h2>
+      <p>Diversify your portfolio with stable and long-term opportunities.</p>
+    </div> -->
+  </section>
+
+  <section id="section3">
+    <!-- <div class="content-box">
+      <h2>Buzz Groups</h2>
+      <p>Be part of innovative companies and future leaders.</p>
+    </div> -->
+  </section>
+</div>
+
+
+<div class="form-container">
+
+  <div class="overlay">
+    <h2 class="opportunity-heading">Investment Opportunity Form</h2>
+    <!-- Row 1 -->
+    <div class="form-row">
+      <input type="text" id="name" placeholder="Full Name">
+      <div id="nameError" class="field-error">⚠ Please enter a valid name (min 3 letters)</div>
+      <div>    
+      <input type="text" id="phone" placeholder="Phone Number">
+      <div id="phoneError" class="field-error">⚠ Enter a valid 10-digit phone number</div>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="form-row">
+      <input type="text" id="city" placeholder="City">
+      <div id="cityError" class="field-error">⚠ Please enter your city</div>
+      <div>     
+      <input type="text" id="designation" placeholder="Designation">
+      <div id="designationError" class="field-error">⚠ Please enter your designation</div>
+      </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="form-row">
+      <input type="text" id="registeredName" placeholder="Registered Name">
+      <div id="registeredNameError" class="field-error">⚠ Please enter registered name</div>
+      <div>  
+      <input type="text" id="tradeName" placeholder="Trade Name">
+      <div id="tradeNameError" class="field-error">⚠ Please enter trade name</div>
+      </div>
+    </div>
+
+    <!-- Row 4 -->
+    <div class="form-row">
+      <input type="email" id="email" placeholder="Email ID">
+     <div id="emailError" class="field-error">⚠ Enter a valid email ID</div>
+     <div>     
+      <select id="reference" onchange="showExtraField()">
+        <option value="">Reference</option>
+        <option value="social">Social Media</option>
+        <option value="google">Google</option>
+        <option value="clients">Old Clients</option>
+        <option value="others">Others</option>
+      </select>
+      <div id="referenceError" class="field-error">⚠ Please select a reference</div>
+       </div>
+    </div>
+
+    <!-- Extra field row -->
+    <div class="form-row" id="extraFieldRow" style="display:none;">
+      <input type="text" id="extraField" placeholder="">
+    </div>
+
+    <div class="checkbox-row">
+      <input type="checkbox" id="pitchCheck"> Request for Pitch
+    </div>
+    <button class="btn" onclick="validateForm()">Submit</button>
+    <div id="thankyouMessage" class="message success">✅ Thank you for your interest! We'll contact you soon.</div>
+  </div>
+
+<script>
+  function showExtraField() {
+    let ref = document.getElementById("reference").value;
+    let extraRow = document.getElementById("extraFieldRow");
+    let extraInput = document.getElementById("extraField");
+
+    if (ref === "social") {
+      extraRow.style.display = "flex";
+      extraInput.placeholder = "Eg: Facebook, Instagram";
+    } else if (ref === "google") {
+      extraRow.style.display = "flex";
+      extraInput.placeholder = "Eg: Ads, Search";
+    } else if (ref === "clients") {
+      extraRow.style.display = "flex";
+      extraInput.placeholder = "Eg: Name, Industry Name";
+    } else if (ref === "others") {
+      extraRow.style.display = "flex";
+      extraInput.placeholder = "Please specify";
+    } else {
+      extraRow.style.display = "none";
+      extraInput.value = "";
+    }
+  }
+
+  function validateForm() {
+    let name = document.getElementById("name").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+    let city = document.getElementById("city").value.trim();
+    let designation = document.getElementById("designation").value.trim();
+    let registeredName = document.getElementById("registeredName").value.trim();
+    let tradeName = document.getElementById("tradeName").value.trim();
+    let reference = document.getElementById("reference").value.trim();
+    let email = document.getElementById("email").value.trim();
+
+    // validators
+    function isValidText(input, min = 3) { return input.length >= min; }
+    function isValidPhone(phone) { return /^[0-9]{10}$/.test(phone); }
+    function isValidEmail(email) { 
+      return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email); 
+    }
+
+    let valid = true;
+
+    if (!isValidText(name)) { document.getElementById("nameError").style.display="block"; valid=false; }
+    else { document.getElementById("nameError").style.display="none"; }
+
+    if (!isValidPhone(phone)) { document.getElementById("phoneError").style.display="block"; valid=false; }
+    else { document.getElementById("phoneError").style.display="none"; }
+
+    if (!isValidText(city)) { document.getElementById("cityError").style.display="block"; valid=false; }
+    else { document.getElementById("cityError").style.display="none"; }
+
+    if (!isValidText(designation,2)) { document.getElementById("designationError").style.display="block"; valid=false; }
+    else { document.getElementById("designationError").style.display="none"; }
+
+    if (!isValidText(registeredName)) { document.getElementById("registeredNameError").style.display="block"; valid=false; }
+    else { document.getElementById("registeredNameError").style.display="none"; }
+
+    if (!isValidText(tradeName)) { document.getElementById("tradeNameError").style.display="block"; valid=false; }
+    else { document.getElementById("tradeNameError").style.display="none"; }
+
+    if (reference==="") { document.getElementById("referenceError").style.display="block"; valid=false; }
+    else { document.getElementById("referenceError").style.display="none"; }
+
+    if (!isValidEmail(email)) { document.getElementById("emailError").style.display="block"; valid=false; }
+    else { document.getElementById("emailError").style.display="none"; }
+
+    if (valid) {
+      document.getElementById("thankyouMessage").style.display="block";
+    } else {
+      document.getElementById("thankyouMessage").style.display="none";
+    }
+  }
+</script>
+</div>
+
+</body>
+</html>

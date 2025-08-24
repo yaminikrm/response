@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+   <style>
+        .apply-bg-container {
+        background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744629496/Blue_Minimalist_Texture_Background_Wallpaper_Image_For_Free_Download_-_Pngtree_mlapqi.jpg");
+        background-size: cover;
+        padding: 50px;
+
+        }
+
+        .small-bg-apply-container {
+            background-color: white;
+            padding: 20px; 
+        }
+
+        .form-control-label {
+            font-family: Roboto;
+            font-weight: bold;
+        }
+
+        .submit-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .apply-now-button {
+            font-family: Roboto;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .gender-heading {
+            font-family: Roboto;
+            font-size: 15px;
+        }
+
+
+   </style>
+
+
+</head>
+<body>
+
+    <div class="apply-bg-container">
+            <h1 class="apply-now-button">APPLY NOW</h1>
+            <div class="small-bg-apply-container">
+                <form id="mitraForm">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" />
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="date">Date Of Birth</label>
+                                <input type="text" class="form-control" id="date">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="contact">Contact No</label>
+                                <input type="text" class="form-control" id="contact">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="adress">Address</label>
+                                <input type="text" class="form-control" id="adress">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="city">City</label>
+                                <input type="text" class="form-control" id="city">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="state">State</label>
+                                <input type="text" class="form-control" id="state">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="pin">PIN</label>
+                                <input type="text" class="form-control" id="pin">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="maritalstatus">Marital Status</label>
+                                <select id="maritalstatus" class="form-control">
+                                    <option>Single</option>
+                                    <option>Married</option>
+                                    <option>Divorced</option>
+                                    <option>Widowed</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" id="email">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="educationalqualification">Education Qualification</label>
+                                <input type="text" class="form-control" id="educationalqualification">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="placeofoperation">Place of Operation</label>
+                                <input type="text" class="form-control" id="placeofoperation">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="district">District</label>
+                                <input type="text" class="form-control" id="district">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="numberofyearsinlocation">Number of Years in Location</label>
+                                <input type="text" class="form-control" id="numberofyearsinlocation">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="mitratype">Mitra Type</label>
+                                <select id="mitratype" class="form-control">
+                                    <option>Both</option>
+                                    <option>Active Partner</option>
+                                    <option>I Want To Be Just Investor</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="currentsbp">Current Business / Service Position</label>
+                                <input type="text" class="form-control" id="currentsbp">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="typeofpp">Type Of Present Profession</label>
+                                <select class="form-control" id="typeofpp">
+                                    <option>Delivery Excutive</option>
+                                    <option>House Wife</option>
+                                    <option>Retired Employee</option>
+                                    <option>Private Employee</option>
+                                    <option>Travel Agent</option>
+                                    <option>Realestate Agent</option>
+                                    <option>Student</option>
+                                    <option>Dream Catcher</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="telluspp">Tell us how you heard about our partner program</label>
+                                <select class="form-control" id="telluspp">
+                                    <option>Buzz Groups Website</option>
+                                    <option>Buzz Mitra Agent</option>
+                                    <option>Buzz Employee</option>
+                                    <option>Social Media</option>
+                                    <option>Just Dail</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h1 class="gender-heading mt-1">Do you own a retail shop / office space?</h1>
+                                <input type="radio" id="yes" value="Yes" name="retail">
+                                <label for="yes">Yes</label>
+                                <input type="radio" id="no" value="No" name="retail">
+                                <label for="no">No</label>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="investmentoffered">Investment Offered ?</label>
+                                <select class="form-control" id="investmentoffered">
+                                    <option>Upto 5L</option>
+                                    <option>6 - 12L</option>
+                                    <option>13 - 20L</option>
+                                    <option>Others</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="remarks">Remarks</label>
+                                <input type="text" class="form-control" id="remarks">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="flex d-flex justify-content-center">
+                    <div class="submit-button ml-5">
+                        <button class="btn btn-success" onclick="sendToWhatsApp()">Submit</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <script>
+    function sendToWhatsApp() {
+        let name = document.getElementById("name").value;
+        let dob = document.getElementById("date").value;
+        let contact = document.getElementById("contact").value;
+        let address = document.getElementById("adress").value;
+        let city = document.getElementById("city").value;
+        let state = document.getElementById("state").value;
+        let pin = document.getElementById("pin").value;
+        let marital = document.getElementById("maritalstatus").value;
+        let email = document.getElementById("email").value;
+        let edu = document.getElementById("educationalqualification").value;
+        let place = document.getElementById("placeofoperation").value;
+        let district = document.getElementById("district").value;
+        let years = document.getElementById("numberofyearsinlocation").value;
+        let mitratype = document.getElementById("mitratype").value;
+        let currentsbp = document.getElementById("currentsbp").value;
+        let typeofpp = document.getElementById("typeofpp").value;
+        let telluspp = document.getElementById("telluspp").value;
+        let retail = document.querySelector('input[name="retail"]:checked')?.value || "Not Selected";
+        let investment = document.getElementById("investmentoffered").value;
+        let remarks = document.getElementById("remarks").value;
+
+        // Replace with your WhatsApp number (country code + number, no + symbol)
+        let phoneNumber = "918886452452";
+
+        let message = 
+            `*Buzz Mitra Application Form*
+            Name: ${name}
+            DOB: ${dob}
+            Contact: ${contact}
+            Address: ${address}
+            City: ${city}
+            State: ${state}
+            PIN: ${pin}
+            Marital Status: ${marital}
+            Email: ${email}
+            Education Qualification: ${edu}
+            Place of Operation: ${place}
+            District: ${district}
+            Years in Location: ${years}
+            Mitra Type: ${mitratype}
+            Current Business/Service Position: ${currentsbp}
+            Present Profession: ${typeofpp}
+            Heard About Us From: ${telluspp}
+            Own Retail Shop/Office: ${retail}
+            Investment Offered: ${investment}
+            Remarks: ${remarks}`;
+
+        let url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+        window.open(url, '_blank').focus();
+    }
+    </script>
+
+</body>
+</html>
